@@ -1,130 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diamond Price Prediction Form</title>
+    
     <style>
+        /* Add your CSS styles here */
         body {
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
-            background-image: url('https://media.istockphoto.com/id/1988749982/photo/diamonds-standing-on-black-gradient-background.jpg?s=612x612&w=0&k=20&c=hzgBEC-1Wb2xSHZq8MY5eRNjOh8LBDkFP8G5uZ10VDM='); /* Replace 'path/to/your/background-image.jpg' with the actual path to your background image */
-            background-size: cover;
-            color: #333;
         }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
+        .form-container {
+            max-width: 500px;
+            margin: 20px auto;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white container */
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
         }
         label {
-            display: inline-block;
-            width: 120px;
-            text-align: left;
-            margin-bottom: 10px;
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
         }
-        input, select {
-            width: calc(100% - 130px);
-            padding: 8px;
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: calc(100% - 22px); /* Adjusted width */
+            padding: 10px;
+            border-radius: 5px;
             border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-bottom: 20px;
+            transition: border-color 0.3s ease;
+            box-sizing: border-box; /* Ensure padding and border are included in the width */
+        }
+        input[type="text"]:hover,
+        input[type="number"]:hover,
+        select:hover {
+            border-color: #007bff; /* Change border color on hover */
+        }
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        select:focus {
+            outline: none; /* Remove outline on focus */
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add box-shadow on focus */
         }
         input[type="submit"] {
             background-color: #007bff;
             color: #fff;
             border: none;
-            border-radius: 4px;
             padding: 10px 20px;
+            border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
         }
         input[type="submit"]:hover {
             background-color: #0056b3;
         }
-        .result {
-            margin-top: 20px;
-            font-size: 18px;
-        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Diamond Price Prediction Form</h1>
-        <form id="predictionForm" action="" method="POST">
-            <label for="carat">Carat:</label>
-            <input type="text" id="carat" name="carat" placeholder="Enter carat value (float)"><br>
+    <div class="form-container">
+        <h2>Diamond Price Prediction Form</h2>
+        <form action="{{url_for('predict_datapoint')}}" method="POST">
+            <div class="form-group">
+                <label for="carat">Carat:</label>
+                <input type="number" id="carat" name="carat" placeholder="Enter carat value (float)" value="0.5" step="0.01">
+            </div>
+
+            <div class="form-group">
+                <label for="depth">Depth:</label>
+                <input type="number" id="depth" name="depth" placeholder="Enter depth value (float)" value="60" step="0.01">
+            </div>
+
+            <div class="form-group">  
+                <label for="table">Table:</label>
+                <input type="number" id="table" name="table" placeholder="Enter table value (float)" value="60" step="0.01">
+            </div>
             
-            <label for="depth">Depth:</label>
-            <input type="text" id="depth" name="depth" placeholder="Enter depth value (float)"><br>
-            
-            <label for="table">Table:</label>
-            <input type="text" id="table" name="table" placeholder="Enter table value (float)"><br>
-            
-            <label for="x">x:</label>
-            <input type="text" id="x" name="x" placeholder="Enter x value (float)"><br>
-            
-            <label for="y">y:</label>
-            <input type="text" id="y" name="y" placeholder="Enter y value (float)"><br>
-            
-            <label for="z">z:</label>
-            <input type="text" id="z" name="z" placeholder="Enter z value (float)"><br>
-            
-            <label for="cut">Cut:</label>
-            <select id="cut" name="cut">
-                <option value="Fair">Fair</option>
-                <option value="Good">Good</option>
-                <option value="Very Good">Very Good</option>
-                <option value="Premium">Premium</option>
-                <option value="Ideal">Ideal</option>
-            </select><br>
-            
-            <label for="color">Color:</label>
-            <select id="color" name="color">
-                <option value="D">D</option>
-                <option value="E">E</option>
-                <option value="F">F</option>
-                <option value="G">G</option>
-                <option value="H">H</option>
-                <option value="I">I</option>
-                <option value="J">J</option>
-            </select><br>
-            
-            <label for="clarity">Clarity:</label>
-            <select id="clarity" name="clarity">
-                <option value="I1">I1</option>
-                <option value="SI2">SI2</option>
-                <option value="SI1">SI1</option>
-                <option value="VS2">VS2</option>
-                <option value="VS1">VS1</option>
-                <option value="VVS2">VVS2</option>
-                <option value="VVS1">VVS1</option>
-                <option value="IF">IF</option>
-            </select><br>
-            
-            <input type="submit" value="Submit">
+            <div class="form-group">
+                <label for="x">x:</label>
+                <input type="number" id="x" name="x" placeholder="Enter x value (float)" value="5.01" step="0.01">
+            </div>
+          
+            <div class="form-group">
+                <label for="y">y:</label>
+                <input type="number" id="y" name="y" placeholder="Enter y value (float)" value="5.02" step="0.01">
+            </div>
+          
+            <div class="form-group">
+                <label for="z">z:</label>
+                <input type="number" id="z" name="z" placeholder="Enter z value (float)" value="5.03" step="0.01">
+            </div>         
+        
+            <div class="form-group">
+                <label for="cut">Cut:</label>
+                <select id="cut" name="cut">
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Premium">Premium</option>
+                    <option value="Ideal" selected>Ideal</option> <!-- Default value -->
+                </select>
+            </div>
+          
+            <div class="form-group">
+                <label for="color">Color:</label>
+                <select id="color" name="color">
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    <option value="H">H</option>
+                    <option value="I">I</option>
+                    <option value="J" selected>J</option> <!-- Default value -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="clarity">Clarity:</label>
+                <select id="clarity" name="clarity">
+                    <option value="I1">I1</option>
+                    <option value="SI2">SI2</option>
+                    <option value="SI1">SI1</option>
+                    <option value="VS2">VS2</option>
+                    <option value="VS1">VS1</option>
+                    <option value="VVS2">VVS2</option>
+                    <option value="VVS1" selected>VVS1</option>
+                    <option value="IF" selected>IF</option>
+                </select>
+            </div>
+
+            <div style="clear:both;"></div>
+            <input type="submit" value="Predict">
         </form>
-        <div class="result" id="predictionResult"></div>
     </div>
 
+    <!-- Add jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- JavaScript for making drop-down menus open upon hover -->
     <script>
-        document.getElementById('predictionForm').addEventListener('submit', function(event) {
-            event.preventDefault(); 
-            var form = this;
-            var formData = new FormData(form);
-            
-            var xhr = new XMLHttpRequest();
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    document.getElementById('predictionResult').innerHTML = xhr.responseText;
-                }
-            };
-            xhr.open(form.method, form.action, true);
-            xhr.send(formData);
+        $(document).ready(function(){
+            let timeout;
+            $('select').mouseenter(function(){
+                let $this = $(this);
+                timeout = setTimeout(function(){
+                    $this.attr('size', $this.find('option').length);
+                }, 200);
+            }).mouseleave(function(){
+                clearTimeout(timeout);
+                $(this).removeAttr('size');
+            }).change(function(){
+                $(this).removeAttr('size');
+            });
         });
     </script>
 </body>
