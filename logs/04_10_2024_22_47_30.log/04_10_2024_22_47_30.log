@@ -1,0 +1,9 @@
+[2024-04-10 22:47:31,709] 96 werkzeug - WARNING -  * Debugger is active!
+[2024-04-10 22:47:31,709] 96 werkzeug - INFO -  * Debugger PIN: 642-302-194
+[2024-04-10 22:49:15,884] 96 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2024 22:49:15] "GET / HTTP/1.1" 200 -
+[2024-04-10 22:49:16,005] 96 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2024 22:49:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-04-10 22:49:19,163] 62 root - INFO - Dataframe created
+[2024-04-10 22:49:19,164] 37 root - INFO - Error in load_object fuction in utils
+[2024-04-10 22:49:19,164] 24 root - INFO - Error occured in predict function in prediction_pipeline location
+[2024-04-10 22:49:19,172] 96 werkzeug - INFO - 127.0.0.1 - - [10/Apr/2024 22:49:19] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2024-04-10 22:56:48,490] 96 werkzeug - INFO -  * Detected change in 'D:\\Programs\\ThirdEye\\Gemstone\\src\\pipeline\\train_pipeline.py', reloading

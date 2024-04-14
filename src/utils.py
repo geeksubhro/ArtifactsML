@@ -1,6 +1,13 @@
 import os 
 import sys 
 import pickle 
+
+# Append parent directory to sys.path
+parent_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(parent_dir)
+
+from src.exception import CustomException
+
 from src.exception import CustomException
 from sklearn.metrics import r2_score
 from src.logger import logging

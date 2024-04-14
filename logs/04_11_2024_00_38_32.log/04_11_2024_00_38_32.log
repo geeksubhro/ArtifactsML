@@ -1,0 +1,54 @@
+[2024-04-11 00:38:34,178] 96 werkzeug - WARNING -  * Debugger is active!
+[2024-04-11 00:38:34,181] 96 werkzeug - INFO -  * Debugger PIN: 121-881-011
+[2024-04-11 00:39:53,942] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:39:53] "GET / HTTP/1.1" 200 -
+[2024-04-11 00:39:55,929] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:02,198] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:03,443] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:04,666] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:07,020] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:07,727] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:07] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:07,728] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:07] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:07,728] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:07] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:07,730] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:07] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:08,232] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:08,248] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:08] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:08,820] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:08] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:09,613] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:09,628] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:09] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:10,943] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:10,968] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:10] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:11,399] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:11,414] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:11] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:11,607] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:11,621] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:11] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:11,802] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:11,818] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:11] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:12,024] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:12,038] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:12] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:12,248] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:12,261] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:12] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:12,424] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:12,438] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:12] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:13,064] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:13,079] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:13] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:13,224] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:13,238] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:13] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:13,388] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:13,402] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:13] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:13,592] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:13,606] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:13] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:14,460] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:14,474] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:14] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:17,947] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:17,958] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:17] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:20,014] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:20,025] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:20] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:22,114] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:22,125] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:22] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:22,652] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:22,666] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:22] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:25,059] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:25,070] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:25] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:40:27,692] 62 root - INFO - Dataframe created
+[2024-04-11 00:40:27,714] 96 werkzeug - INFO - 127.0.0.1 - - [11/Apr/2024 00:40:27] "POST /predict HTTP/1.1" 200 -
+[2024-04-11 00:45:05,346] 96 werkzeug - INFO -  * Detected change in 'd:\\Programs\\ThirdEye\\Gemstone\\setup.py', reloading

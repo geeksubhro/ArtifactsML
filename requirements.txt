@@ -1,8 +1,6 @@
-pandas
-numpy
-Flask
-typing
-Scikit-learn
+pandas 
+numpy 
+flask 
+scikit-learn
 seaborn
-pickles
--e .
+datetime

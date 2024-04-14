@@ -40,9 +40,7 @@ class DataTransformation:
                 steps=[
                 ('imputer',SimpleImputer(strategy='median')),
                 ('scaler',StandardScaler())
-
                 ]
-
             )
 
             # Categorigal Pipeline
@@ -52,7 +50,6 @@ class DataTransformation:
                 ('ordinalencoder',OrdinalEncoder(categories=[cut_categories,color_categories,clarity_categories])),
                 ('scaler',StandardScaler())
                 ]
-
             )
 
             preprocessor=ColumnTransformer([
@@ -60,9 +57,9 @@ class DataTransformation:
             ('cat_pipeline',cat_pipeline,categorical_cols)
             ])
             
+            logging.info('Pipeline Completed')
             return preprocessor
 
-            logging.info('Pipeline Completed')
 
         except Exception as e:
             logging.info("Error in Data Trnasformation")
